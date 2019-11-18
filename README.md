@@ -1,4 +1,4 @@
-# Vue Sidebar for user Raspberry Pi pulse sensor  interface
+# Vue Sidebar to use Raspberry Pi pulse sensor user interface
 
 ## Features
 
