@@ -1,4 +1,4 @@
-# Vue Sidebar menu example
+# Vue Sidebar for user Raspberry Pi pulse sensor  interface
 
 ## Features
 
