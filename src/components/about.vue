@@ -1,9 +1,9 @@
 <template>
   <nav>
     <div class="jumbotron">
-      <h1 class ="display-5">Developer Team</h1>
+      <h1 class ="display-5">Developement Team</h1>
       <hr class ="my-4">
-      <strong>{{ message }}</strong>
+      <h3>{{ message }}</h3>
     </div>
   </nav>
 </template>
@@ -38,8 +38,9 @@ export default {
      color: #5b42b9;
      font-size: 70 px;
      font-weight: bold;
+     text-align: center;
    }
-   strong{
+   h3{
      color: #711616;
      text-align: center;
    }
