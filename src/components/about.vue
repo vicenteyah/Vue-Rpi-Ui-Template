@@ -8,15 +8,16 @@
       <div class="w3-row-padding w3-center w3-margin-top">
           <div class="w3-third">
             <div class="w3-card w3-container" style="min-height:460px">
-                  <h3>powered by pythonFlask Server</h3><br>
+                  <h4>Powered by pythonFlask Server</h4><br>
                   <i class="fa fa-server w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
                   <p>Built-in Python Flask and Vuejs</p>
                   <p>Please contact us on social networks</p>
                   <a class="btn btn-social-icon btn-github" href="https://github.com/vicenteyah/Vue-Rpi-Ui-Template.git">
-                     <span class="fa fa-github"></span>
+                     <span class="fa fa-github" style="font-size:35px"></span>
                   </a>
+
                   <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/angeljesus.canpech">
-                     <span class="fa fa-facebook"></span>
+                     <span class="fa fa-facebook" style="font-size:35px"></span>
                   </a>
             </div>
           </div>
@@ -64,5 +65,9 @@ export default {
    }
    nav{
      align: center;
+   }
+   h4{
+     font-size: 60 px;
+     font-weight: bold;
    }
 </style>
