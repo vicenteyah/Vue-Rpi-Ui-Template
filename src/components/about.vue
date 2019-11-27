@@ -38,7 +38,7 @@ export default {
   },
   methods: {
     getMessage() {
-       var path = 'http://192.168.0.25:5000/about'
+       var path = 'http://192.168.0.33:5000/about'
        axios.get(path).then((res)=>{
          this.message = res.data
        }).catch((err)=>{
