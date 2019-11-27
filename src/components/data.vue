@@ -2,31 +2,12 @@
   <nav>
     <div class="jumbotron">
        <h1>To Use the heartbeat sensor</h1>
-        <h2> Please Enter your data info </h2>
+        <strong> Please click on button below</strong>
         <p> </p>
-        <input v-model = "data.nombre" placeholder="Name">
-        <p> </p>
-        <input v-model = "data.apaterno" placeholder="Last Name">
-        <p> </p>
-        <input v-model = "data.tipoSangre" placeholder="Blood Type">
         <p> </p>
         <button class ="btn btn-primary btn-lg" @click.prevent="getSignals"> Use pulse Sensor </button>
         <p> </p>
-        <table class=" table table-striped">
-          <thead class ="thead-dark">
-             <tr>
-               <th>Name</th>
-               <th>Last name</th>
-               <th>Blood type</th>
-             </tr>
-          </thead>
-          <tbody>
-            <td>{{ data.nombre }}</td>
-            <td>{{ data.apaterno }}</td>
-            <td>{{ data.tipoSangre }}</td>
-          </tbody>
-
-        </table>
+        <p> {{ msg }}</p>
       </div>
 
   </nav>
@@ -34,18 +15,26 @@
 
 
 <script>
+import axios from 'axios'
 export default {
   name: "app",
   data() {
     return{
-       data: {
-          nombre:'',
-          apaterno:'',
-          tipoSangre:''
-      },
-    };
-  },
-}
+       msg:'sensor response'
+      }
+    },
+    methods: {
+       getSignals() {
+        var path = 'http://192.168.0.33:5000/data'
+        axios.get(path).then((res)=>{
+          this.msg = res.data
+        }).catch((err)=>{
+          throw err
+        })
+      }
+    },
+
+  }
 </script>
 <style scoped>
    h1{
@@ -61,5 +50,8 @@ export default {
    nav{
      text-align: center;
      text-decoration-color: greenyellow;
+   }
+   p{
+     color: #02272c;
    }
 </style>
