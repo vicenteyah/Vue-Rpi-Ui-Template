@@ -23,12 +23,12 @@ export default {
   name: "home",
   data(){
     return{
-      message: 'without message'
+      message: 'server is not connected'
     }
   },
   methods: {
     getMessage() {
-      const path = 'http://192.168.0.25:5000/home'
+      const path = 'http://192.168.0.33:5000/home'
       axios.get(path).then((res)=>{
         this.message = res.data
       }).catch((err)=>{
