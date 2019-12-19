@@ -48,7 +48,10 @@
 
     .sidebar-panel {
         overflow-y: auto;
-        background-color: #130f40;
+        background-color: rgba(215, 241, 255, 0.726);
+       
+        opacity: 5;
+        filter: alpha(opacity=30); /* For IE8 and earlier */
         position: fixed;
         left: 0;
         top: 0;
