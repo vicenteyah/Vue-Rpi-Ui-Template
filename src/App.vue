@@ -48,11 +48,10 @@ body {
   height: 100%;
   background: rgb(101, 31, 87);
   background: linear-gradient(
-    45deg,
-    rgba(101, 31, 87, 1) 10%,
-    rgba(40, 129, 84, 1) 50%,
-    rgba(186, 8, 17, 1) 100%
-  );
+    to right,
+    rgba(255, 0, 0, 0.13),
+    rgba(0, 238, 186, 0.596),
+    rgba(255, 0, 0, 0.301));
 }
 
 .logo {
@@ -73,10 +72,12 @@ ul.sidebar-panel-nav {
 }
 
 ul.sidebar-panel-nav > li > a {
-  color: #fff;
+  color:rgba(59, 10, 82, 0.459);
+  font-family: Baloo Bhai , sans-serif;
   text-decoration: none;
   font-size: 1.5rem;
   display: block;
   padding-bottom: 0.5em;
 }
+
 </style>
